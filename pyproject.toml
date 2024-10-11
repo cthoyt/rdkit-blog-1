@@ -1,0 +1,17 @@
+[tool.ruff]
+line-length = 100
+extend-include = ["*.ipynb"]
+
+[tool.ruff.lint]
+extend-select = [
+    "F", # pyflakes
+    "UP", # pyupgrade
+    "C4", # comprehensions
+]
+ignore = [
+    "E402", # imports can come whenever
+    "F821", # undefined names happen
+    "E741", # ambiguous variable names are okay
+    "E722", # naked excepts are okay
+    "F811", # redefinition happens
+]
